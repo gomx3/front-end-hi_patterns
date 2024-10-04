@@ -1,4 +1,4 @@
-## 패턴 활용 예제: 비밀번호 접근 제한 ! ! !
+## Proxy 패턴 활용 예제: 비밀번호 접근 제한 ! ! !
 
 [참고] https://gist.github.com/superLipbalm/dea43695b66897d1b4d246b402aab320
 
