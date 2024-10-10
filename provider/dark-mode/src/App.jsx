@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ThemeProvider } from "styled-components";
 import "./styles.css";
 
 import List from "./List";
@@ -15,8 +16,6 @@ export const themes = {
   }
 };
 
-export const ThemeContext = React.createContext();
-
 export default function App() {
   const [theme, setTheme] = useState("dark");
 
@@ -26,12 +25,13 @@ export default function App() {
 
   return (
     <div className={`App theme-${theme}`}>
-      <ThemeContext.Provider value={{ theme: themes[theme], toggleTheme }}>
+      <ThemeProvider theme={themes[theme]}>
         <>
-          <Toggle />
+          <Toggle toggleTheme={toggleTheme} />
           <List />
         </>
-      </ThemeContext.Provider>
+      </ThemeProvider>
     </div>
   );
 }
+
