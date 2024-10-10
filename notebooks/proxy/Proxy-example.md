@@ -11,9 +11,9 @@
 
  기존 코드를 변경하지 않고 새로운 기능을 추가하는 기능(OCP)을 하는 Proxy 패턴의 활용 사례를 보여주면서, 기존 객체와 사용자의 요청 사이에 위치해 있기 때문에 보안 역할을 강화하는 특징을 보여주는 예제이다.
 
-![image.png](./images/image%204.png)
+![image](https://github.com/user-attachments/assets/41f82ac7-c649-4c82-95d0-f00db524345c)
 
-![image.png](./images/image%205.png)
+![image](https://github.com/user-attachments/assets/1934d306-bb2b-4e95-bef0-e34735d15732)
 
  사진과 같이 관리자는 사용자의 비밀번호를 볼 수 있고(왼쪽), 관리자가 아닌 경우 비밀번호 접근 제한이 거절된다(오른쪽).
 

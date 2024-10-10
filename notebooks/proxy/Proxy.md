@@ -28,14 +28,14 @@ const personProxy = new Proxy(person, {})
 
  Proxy 클래스의 **두 번째 인자는** **핸들러**를 의미한다. 객체를 다루는 특정 동작을 정의할 수 있다. 대표적으로 `get`이나 `set`과 같은 메소드를 추가할 수 있다. 
 
-![image.png](./images/image.png)
+![image](https://github.com/user-attachments/assets/034b3e0d-d678-4a86-af6f-1c6ba9311981)
 
 - `get`: 프로퍼티에 접근할 때
     
      해당 키와 값에 대한 메시지를 콘솔에 출력할 수 있다.
     
 
-![image.png](./images/image%201.png)
+![image](https://github.com/user-attachments/assets/a6cc0c0b-f1be-447b-98ab-0c306063e603)
 
 - `set`: 프로퍼티를 수정할 때
     
@@ -67,7 +67,7 @@ personProxy.age = 43; // age가 42에서 43로 변경되었습니다.
 
  코드를 실행하면 콘솔에 이렇게 출력된다.
 
-![image.png](./images/image%202.png)
+![image](https://github.com/user-attachments/assets/865a65b5-1b23-4b2b-be27-82c0c13f0519)
 
 - `name` prop에 접근할 때, Proxy 객체가 콘솔에 값을 대신 출력한다
 - `age` prop에 접근할 때, Proxy 객체가 변경 이전 값과 이후 값을 콘솔에 대신 출력한다
@@ -123,7 +123,7 @@ personProxy.name = "";           // 이름의 글자수가 모자랍니다.
 
  실행하면 콘솔에 이렇게 출력된다. 
 
-![image.png](./images/image%203.png)
+![image](https://github.com/user-attachments/assets/7b8ead37-72d9-4319-822f-9d8b01b71f7a)
 
 ## Reflect 객체 활용
 
